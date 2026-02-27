@@ -42,3 +42,41 @@ This project implements a real-time digital thermometer using an ATmega328P micr
 -Scalable Design - Easy to extend to more digits or displays
 
 ## Hardware Requirements
+
+## Wiring Diagram
+                              ┌─────────────────┐
+                              │   ATmega328P    │
+                              │                 │
+         ┌─────────────┐      │  PB5 ──┐ 17     │
+         │   LM35      │      │  PB3 ──┼─ 15     │
+    5V ──┤ Pin 1 (VCC) │      │  PB2 ──┼─ 14     │
+         │ Pin 2 (OUT) ├──────┤  PC0 ──┼─ 23     │
+    GND ─┤ Pin 3 (GND) │      │        │         │
+         └─────────────┘      │  AVCC ── 20     │
+                              │  AREF ─┼─ 21     │
+                              └────────┼─────────┘
+                                       │
+                    ┌──────────────────┼──────────────────┐
+                    │                  │                  │
+               ┌────▼────┐        ┌───▼────┐       ┌────▼────┐
+               │  74HC595 │        │74HC595 │       │ 7-Segment│
+               │   (U2)   │        │  (U3)  │       │ Display  │
+               │  Digits  │        │Segments│       │          │
+               │          │        │        │       │          │
+    PB2 ───────┤ ST_CP 12 │        │ST_CP 12│       │A B C D E │
+    PB5 ───────┤ SH_CP 11 │        │SH_CP 11│       │F G DP    │
+    PB3 ───────┤ DS   14  │        │DS   14 │       │          │
+               │          │ Q7' 9 ─┴───→ DS 14      │COM1 COM2 │
+         Q0 15─┤          │        │        │       │COM3 COM4 │
+         Q1  1─┤          │        │Q0   15─┼───────┤A         │
+         Q2  7─┤          │        │Q1    1─┼───────┤B         │
+         Q3  4─┤          │        │Q2    7─┼───────┤C         │
+         Q4  5─┤          │        │Q3    4─┼───────┤D         │
+         Q5  6─┤          │        │Q4    5─┼───────┤E         │
+         Q6  9─┤          │        │Q5    6─┼───────┤F         │
+         Q7 10─┤          │        │Q6    9─┼───────┤G         │
+               │     8 GND│        │Q7   10─┼───────┤DP        │
+               │    16 VCC│        │   8 GND│       │          │
+               └──────────┘        └───┬────┘       └──────────┘
+                    │                  │
+                   GND                GND
