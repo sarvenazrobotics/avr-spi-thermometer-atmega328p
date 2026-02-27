@@ -92,13 +92,11 @@ This project implements a real-time digital thermometer using an ATmega328P micr
                     │                  │
                    GND                GND
 ### How it works 
-[table-19a29046-f9d1-437f-93a3-a36d60bc6e99 (1).csv](https://github.com/user-attachments/files/25608946/table-19a29046-f9d1-437f-93a3-a36d60bc6e99.1.csv)
-U3 Pin,Output,Display Pin,Segment
-Q0 (15),A,Pin 1,Top
-Q1 (1),B,Pin 12,Top-Right
-Q2 (7),C,Pin 6,Bottom-Right
-Q3 (4),D,Pin 5,Bottom
-Q4 (5),E,Pin 4,Bottom-Left
-Q5 (6),F,Pin 2,Top-Left
-Q6 (9),G,Pin 3,Middle
-Q7 (10),DP,Pin 7,Decimal Point
+┌─────────────┐    ┌─────────────┐    ┌─────────────┐    ┌─────────────┐
+│   LM35      │    │  ATmega328P │    │  74HC595    │    │  7-Segment  │
+│  Temperature│───→│     MCU     │───→│  Shift Reg  │───→│   Display   │
+│   Sensor    │    │             │    │   (x2)      │    │             │
+└─────────────┘    └─────────────┘    └─────────────┘    └─────────────┘
+       │                  │                  │                  │
+  10mV/°C            10-bit ADC          SPI Protocol      Multiplexed
+  Analog Out         (0-1023)           (3 wires)          Refresh
