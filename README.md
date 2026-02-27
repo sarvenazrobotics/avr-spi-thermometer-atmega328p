@@ -43,7 +43,7 @@ This project implements a real-time digital thermometer using an ATmega328P micr
 
 ## Hardware Requirements
 
-## Wiring Diagram
+## wiring diagram
                               ┌─────────────────┐
                               │   ATmega328P    │
                               │                 │
