@@ -27,3 +27,16 @@ This project implements a real-time digital thermometer using an ATmega328P micr
 - Flicker-Free Display - 500Hz multiplexing refresh rate
 - Low Pin Count - Only 3 GPIO pins for display control
  - Common Cathode Support - Compatible with standard 7-segment displays
+
+ ### Technical Features
+- SPI Communication - Hardware SPI for fast data transfer (125kHz)
+- Daisy-Chained Shift Registers - Two 74HC595 ICs for 16-bit output
+- 10-bit ADC - 1024-level resolution for temperature sensing
+- Modular Code Structure - Separate SPI, ADC, and display modules
+- Current Protection - 220Ω resistors on all segment lines
+- AVCC Filtering - 100nF capacitor for stable ADC reference
+## Advanced Features
+- Software Calibration - Adjustable offset and scaling
+- Debug Mode - Raw ADC value display option
+  - Configurable Update Rate - Adjustable refresh frequency
+-Scalable Design - Easy to extend to more digits or displays
