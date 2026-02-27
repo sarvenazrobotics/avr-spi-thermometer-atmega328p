@@ -35,8 +35,10 @@ This project implements a real-time digital thermometer using an ATmega328P micr
 - Modular Code Structure - Separate SPI, ADC, and display modules
 - Current Protection - 220Ω resistors on all segment lines
 - AVCC Filtering - 100nF capacitor for stable ADC reference
-## Advanced Features
+### Advanced Features
 - Software Calibration - Adjustable offset and scaling
 - Debug Mode - Raw ADC value display option
 - Configurable Update Rate - Adjustable refresh frequency
 -Scalable Design - Easy to extend to more digits or displays
+
+## Hardware Requirements
