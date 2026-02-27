@@ -93,5 +93,19 @@ This project implements a real-time digital thermometer using an ATmega328P micr
                    GND                GND
 ### How it works 
 
+Here's the table in markdown format, ready to be copied and pasted:
+
+| Step | Component   | Action               | Data/Value                 |
+|------|-------------|----------------------|----------------------------|
+| 1    | LM35        | Senses temperature   | 25°C → 0.25V               |
+| 2    | ATmega ADC  | Converts analog to digital | 0.25V → ADC=51          |
+| 3    | ATmega CPU  | Calculates temperature | 51 → 25°C                 |
+| 4    | ATmega CPU  | Extracts digits       | 25 → d3=2, d4=5            |
+| 5    | SPI         | Sends segment pattern | 0x5B (for '2')             |
+| 6    | SPI         | Sends digit select    | 0x04 (Digit 3)             |
+| 7    | 74HC595     | Latches data          | U3=Segments, U2=Digit      |
+| 8    | Display     | Lights up segments    | Shows "2" on Digit 3       |
+| 9    | Loop        | Repeats for all digits | Refreshes at 500Hz        |
+
 
 
