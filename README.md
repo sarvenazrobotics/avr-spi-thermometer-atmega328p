@@ -92,6 +92,8 @@ This project implements a real-time digital thermometer using an ATmega328P micr
                     │                  │
                    GND                GND
 ### How it works 
+
+
 ┌─────────────┐    ┌─────────────┐    ┌─────────────┐    ┌─────────────┐
 │   LM35      │    │  ATmega328P │    │  74HC595    │    │  7-Segment  │
 │  Temperature│───→│     MCU     │───→│  Shift Reg  │───→│   Display   │
