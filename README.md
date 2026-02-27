@@ -94,11 +94,4 @@ This project implements a real-time digital thermometer using an ATmega328P micr
 ### How it works 
 
 
-┌─────────────┐    ┌─────────────┐    ┌─────────────┐    ┌─────────────┐
-│   LM35      │    │  ATmega328P │    │  74HC595    │    │  7-Segment  │
-│  Temperature│───→│     MCU     │───→│  Shift Reg  │───→│   Display   │
-│   Sensor    │    │             │    │   (x2)      │    │             │
-└─────────────┘    └─────────────┘    └─────────────┘    └─────────────┘
-       │                  │                  │                  │
-  10mV/°C            10-bit ADC          SPI Protocol      Multiplexed
-  Analog Out         (0-1023)           (3 wires)          Refresh
+
