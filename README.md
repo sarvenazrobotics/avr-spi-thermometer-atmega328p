@@ -244,3 +244,24 @@ Workflow:
 - If display flickers → Verify multiplex timing and wiring of digit control lines.
 
 - If nothing appears → Check SPI connections and latch pin.
+
+## Summary
+Summary
+
+This project demonstrates the design and implementation of a real-time digital temperature monitoring system using an ATmega328P microcontroller and an LM35 temperature sensor.The measured analog temperature signal is converted using the internal ADC and displayed on a 4-digit 7-segment display driven through two 74HC595 shift registers via SPI communication.The system efficiently reduces microcontroller I/O usage by leveraging serial-to-parallel conversion and multiplexing techniques, making it both hardware-efficient and scalable.
+
+Through this project, key embedded systems concepts were applied, including:
+
+- Analog-to-Digital Conversion (ADC)
+
+- SPI Communication Protocol
+
+- Shift Register Cascading
+
+- Multiplexed Display Control
+
+- Embedded C Programming
+
+- Real Hardware Debugging and Signal Validation
+
+The final implementation was successfully tested on an Arduino Uno platform, producing stable and accurate real-time temperature readings.
