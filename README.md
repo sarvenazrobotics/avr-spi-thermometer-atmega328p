@@ -174,6 +174,11 @@ void SPI_init(void);
 void SPI_send(uint8_t data);
 void send_16bit(uint8_t digit, uint8_t segment);
 ```
+- Configures ATmega328P as SPI Master
+
+- Sends segment and digit data serially
+
+- Controls latch pin for parallel output update
 
 ## Troubleshooting
 
