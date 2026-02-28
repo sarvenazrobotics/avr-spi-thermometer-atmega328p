@@ -181,8 +181,8 @@ At room temperature (~25–35°C), the display should show:
 ```
 ## Code Structure 
 ### 1. SPI Configuration
-
 Responsible for initializing and handling communication with the two 74HC595 shift registers.
+Imporvments to https://github.com/sarvenazrobotics/avr-spi-7segment-driver in order to add temperature sensor.
 ```c
 void SPI_init(void);
 void SPI_send(uint8_t data);
