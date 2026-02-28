@@ -210,6 +210,28 @@ void display_number(unsigned int number);
 
 - Refreshes digits using multiplexing technique
 
+### 4. Segment Lookup Table
+
+Defines segment patterns for Common Cathode 7-segment display.
+```c
+unsigned char seg_code[10];
+```
+Maps digits 0–9 to corresponding segment byte values.
+
+### 5. Main Application Loop
+ ```c void main(void); ```
+Workflow:
+
+#### 1.Initialize SPI
+
+#### 2.Initialize ADC
+
+#### 3.Continuously:
+
+           - Read temperature
+
+           - Refresh display multiple times for stability
+
 ## Troubleshooting
 
 - If the display shows 0500 → Check LM35 wiring (likely reversed).
