@@ -103,7 +103,7 @@ Here's the table in markdown format, ready to be copied and pasted:
 
 
 ## Usage
-### Hardware Setup
+### 1.Hardware Setup
 
 - Connect the LM35 temperature sensor:
 
@@ -136,5 +136,15 @@ Here's the table in markdown format, ready to be copied and pasted:
 - Ensure correct configuration for Common Cathode
 
 Make sure all components share a common ground.
+
+### 2. Upload the Firmware
+
+- Open the project in your AVR development environment.
+
+- Select the correct microcontroller (ATmega328P).
+
+- Compile the code.
+
+- Upload the generated .hex file to the Arduino Uno.
 
 
