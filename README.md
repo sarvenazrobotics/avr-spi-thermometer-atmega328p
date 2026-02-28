@@ -146,5 +146,15 @@ Make sure all components share a common ground.
 - Compile the code.
 
 - Upload the generated .hex file to the Arduino Uno.
+  
+### 3. Running the System
+
+-Power the board via USB or external 5V supply.
+
+-The display will automatically begin showing the ambient temperature in Celsius.
+
+-The temperature updates continuously in real-time.
+
+-Touching the LM35 sensor will increase the displayed temperature due to body heat.
 
 
