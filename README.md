@@ -8,6 +8,7 @@
 -  [Usage](#-usage)
 - [Code Structure](#-code-structure)
 - [Troubleshooting](#-troubleshooting)
+- [Summary](#-summary)
 
 
 ## Overview
