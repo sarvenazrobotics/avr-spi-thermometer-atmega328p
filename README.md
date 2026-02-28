@@ -171,7 +171,7 @@ At room temperature (~25–35°C), the display should show:
 
 - If the display shows 0500 → Check LM35 wiring (likely reversed).
 
-- If it shows very low values ```(0002, 0003)``` → Check sensor power and ground.
+- If it shows very low values ```(0002, 0003) →``` Check sensor power and ground.
 
 - If display flickers → Verify multiplex timing and wiring of digit control lines.
 
