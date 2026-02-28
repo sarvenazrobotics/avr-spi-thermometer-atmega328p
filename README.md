@@ -198,6 +198,17 @@ unsigned int read_temperature(void);
 ```
   Temperature (°C) = (ADC_value × 500) / 1023
 ```
+### Display Control
+
+Manages digit extraction and multiplexing.
+```c
+void display_number(unsigned int number);
+```
+- Splits temperature into thousands, hundreds, tens, and units
+
+- Sends segment patterns using lookup table
+
+- Refreshes digits using multiplexing technique
 
 ## Troubleshooting
 
