@@ -127,7 +127,7 @@ Here's the table in markdown format, ready to be copied and pasted:
 
 - Q7’ of first register → DS of second register
 
-- Connect the 4-digit 7-segment display:
+ Connect the 4-digit 7-segment display:
 
 - Segment pins → First 74HC595 outputs
 
