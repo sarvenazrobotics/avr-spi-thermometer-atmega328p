@@ -38,6 +38,13 @@ This project implements a real-time digital thermometer using an ATmega328P micr
 
 ## Hardware Requirements
 
+
+
+
+https://github.com/user-attachments/assets/2a4507ab-a91d-45ce-8866-da4094003d89
+
+
+
 | Component           | Quantity | Part Number | Description                          |
 |---------------------|----------|-------------|--------------------------------------|
 | Microcontroller     | 1        | ATmega328P  | 8-bit AVR MCU, 32KB Flash            |
@@ -48,6 +55,7 @@ This project implements a real-time digital thermometer using an ATmega328P micr
 | Breadboard          | 1        | -           | Solderless prototyping board          |
 | Jumper Wires        | ~20      | -           | Male-to-male dupont wires             |
 | Power Supply        | 1        | 5V DC       | Regulated 5V power source             |
+
 
 ## wiring diagram
                               ┌─────────────────┐
