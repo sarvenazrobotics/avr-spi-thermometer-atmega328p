@@ -102,4 +102,39 @@ Here's the table in markdown format, ready to be copied and pasted:
 | 9    | Loop        | Repeats for all digits | Refreshes at 500Hz        |
 
 
+## Usage
+### Hardware Setup
+
+- Connect the LM35 temperature sensor:
+
+- Pin 1 → 5V
+
+- Pin 2 → A0 (ADC0)
+
+- Pin 3 → GND
+
+- Connect the two 74HC595 shift registers:
+
+- DS → MOSI (D11)
+
+- SH_CP → SCK (D13)
+
+- ST_CP → Latch (D10 or configured pin)
+
+- OE → GND
+
+- MR → 5V
+
+- Q7’ of first register → DS of second register
+
+- Connect the 4-digit 7-segment display:
+
+- Segment pins → First 74HC595 outputs
+
+- Digit control pins → Second 74HC595 outputs
+
+- Ensure correct configuration for Common Cathode
+
+Make sure all components share a common ground.
+
 
