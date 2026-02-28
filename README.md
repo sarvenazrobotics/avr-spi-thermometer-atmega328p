@@ -161,6 +161,18 @@ Make sure all components share a common ground.
 
 At room temperature (~25–35°C), the display should show:
 
+```
 0027
 0032
 0035
+```
+
+## Troubleshooting
+
+- If the display shows 0500 → Check LM35 wiring (likely reversed).
+
+- If it shows very low values ```(0002, 0003)``` → Check sensor power and ground.
+
+- If display flickers → Verify multiplex timing and wiring of digit control lines.
+
+- If nothing appears → Check SPI connections and latch pin.
