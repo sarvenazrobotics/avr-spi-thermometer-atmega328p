@@ -219,7 +219,9 @@ unsigned char seg_code[10];
 Maps digits 0–9 to corresponding segment byte values.
 
 ### 5. Main Application Loop
- ```c void main(void); ```
+ ```c
+ void main(void);
+ ```
 Workflow:
 
 #### 1.Initialize SPI
@@ -228,9 +230,9 @@ Workflow:
 
 #### 3.Continuously:
 
-           - Read temperature
+   - Read temperature
 
-           - Refresh display multiple times for stability
+   - Refresh display multiple times for stability
 
 ## Troubleshooting
 
