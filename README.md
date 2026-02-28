@@ -149,12 +149,18 @@ Make sure all components share a common ground.
   
 ### 3. Running the System
 
--Power the board via USB or external 5V supply.
+- Power the board via USB or external 5V supply.
 
--The display will automatically begin showing the ambient temperature in Celsius.
+- The display will automatically begin showing the ambient temperature in Celsius.
 
--The temperature updates continuously in real-time.
+- The temperature updates continuously in real-time.
 
--Touching the LM35 sensor will increase the displayed temperature due to body heat.
+- Touching the LM35 sensor will increase the displayed temperature due to body heat.
 
+  ### Expected Output
 
+At room temperature (~25–35°C), the display should show:
+
+0027
+0032
+0035
