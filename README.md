@@ -165,6 +165,15 @@ At room temperature (~25–35°C), the display should show:
 0032
 0035
 ```
+## Code Structure 
+### 1. SPI Configuration
+
+Responsible for initializing and handling communication with the two 74HC595 shift registers.
+```c
+void SPI_init(void);
+void SPI_send(uint8_t data);
+void send_16bit(uint8_t digit, uint8_t segment);
+```
 
 ## Troubleshooting
 
