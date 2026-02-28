@@ -180,6 +180,25 @@ void send_16bit(uint8_t digit, uint8_t segment);
 
 - Controls latch pin for parallel output update
 
+ ### 2. ADC Configuration
+
+Handles analog-to-digital conversion for the LM35 sensor.
+```c
+void ADC_init(void);
+unsigned int ADC_read(void);
+unsigned int read_temperature(void);
+```
+- Uses AVCC (5V) as reference
+
+- Prescaler set to 128 for stable ADC clock
+
+- Converts raw ADC value to temperature in Celsius
+
+  Conversion formula:
+```
+  Temperature (°C) = (ADC_value × 500) / 1023
+```
+
 ## Troubleshooting
 
 - If the display shows 0500 → Check LM35 wiring (likely reversed).
