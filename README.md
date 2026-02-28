@@ -9,6 +9,7 @@
 - [Code Structure](#-code-structure)
 - [Troubleshooting](#-troubleshooting)
 - [Summary](#-summary)
+- [Project Author](#-project author)
 
 
 ## Overview
