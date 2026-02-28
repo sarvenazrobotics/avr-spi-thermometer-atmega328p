@@ -7,8 +7,7 @@
 -  [How It Works](#-how-it-works)
 -  [Usage](#-usage)
 - [Code Structure](#-code-structure)
-- [License](#-license)
-- [Acknowledgments](#-acknowledgments)
+- [Troubleshooting](#-troubleshooting)
 
 
 ## Overview
